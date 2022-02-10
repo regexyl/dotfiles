@@ -1,8 +1,8 @@
 #!/bin/bash
 
-for file in .vimrc .gitconfig .gitignore .zshrc .my_commands; do
-	ln -sf "$(pwd)/$file" ~/$file
-	echo "$file linked to ~/$file"
+for file in vimrc gitconfig gitignore zshrc my_commands; do
+	ln -sf "$(pwd)/$file" ~/.$file
+	echo "$file linked to ~/.$file"
 done
 
 # Install vim-plug
