@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# For creating a private GitHub repo
+function create() {
+  cd $HOME/dev
+  mkdir $1
+  cd $1
+  git init
+  gh repo create $1 --private -y
+  code .
+}
+
+function memo() {
+  cd $HOME/Desktop/memos
+  
+  # For grabbing filename arg after -c flag
+  while getopts c: flag
+  do
+    case "${flag}" in
+      c) filename=${OPTARG};;
+    esac
+
+    echo "Creating new memo text file..."
+    touch ${filename}.txt
+    open ${filename}.txt
+  done
+
+  # If no create flag, simply open existing file
+  if [ $OPTIND -eq 1 ]
+  then
+    open $1.txt
+  fi
+
+  cd -
+}

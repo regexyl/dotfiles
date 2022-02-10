@@ -1,0 +1,13 @@
+[user]
+    name = Regina Liu
+    email = <INSERT EMAIL>
+[push]
+    default = upstream
+[branch]
+    autosetupmerge = always
+    autosetuprebase = always
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+[merge]
+  ff = only
