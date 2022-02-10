@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 for file in .vimrc .gitconfig .gitignore .zshrc .my_commands; do
 	ln -sf "$(pwd)/$file" ~/$file
