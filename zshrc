@@ -10,6 +10,7 @@ plugins=(
     git
     docker
     zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 
 alias reload="source ~/.zshrc"
@@ -18,7 +19,6 @@ alias localip="ipconfig getifaddr en0"
 alias python='/Library/Frameworks/Python.framework/Versions/3.9/bin/python3'
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.my_commands.sh
 
 export NVM_DIR="$HOME/.nvm"
