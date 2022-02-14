@@ -15,7 +15,7 @@ brew install macvim
 ```
 4. Compile YCM
 ```
-cd ~/.vim/bundle/YouCompleteMe
+cd ~/.vim/plugged/YouCompleteMe
 python3 install.py --all
 ```
 5. Enable [TSServer](https://github.com/Microsoft/TypeScript/tree/main/src/server) by deleting the `third_party/ycmd/third_party/tern_runtime/node_modules` directory in the YCM folder under `~/.vim/plugged/`. Run `install.py --js-completer` at the root of the YCM folder.
